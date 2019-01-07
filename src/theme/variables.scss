@@ -5,15 +5,6 @@
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
 
-@font-face {
-  font-family: 'HasanAlqudsUnicode';
-  src: url('../assets/Hasan-Alquds-Unicode.ttf');
-  src: url('../assets/');//path to your font file
-}
-* {
-  font-family: 'HasanAlqudsUnicode';
-}
-
 
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
@@ -48,9 +39,9 @@ $colors: (
   third:     #F14950,
   forth:      #4ADD85,
   fifth:       #9E005D,
-  sixth:     #329CAF ,
-  gray:   #adacab
+  sixth:     #329CAF
 );
+
 
 // App iOS Variables
 // --------------------------------------------------

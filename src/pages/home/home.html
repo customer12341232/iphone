@@ -1,41 +1,112 @@
-<ion-header class="">
-  <ion-toolbar>
-
-  <ion-title>مختبري My laboratory</ion-title>
-  <ion-buttons end>
-    <button ion-button icon-only color="royal" (click)="showAlert()">
-      <ion-icon name="information-circle"></ion-icon>
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
     </button>
-  </ion-buttons>
-  </ion-toolbar>
+    <ion-title>الصفحة الرئيسة</ion-title>
+  </ion-navbar>
 </ion-header>
 
+<ion-content padding>
+  
+  <div text-center>
+    <h3>مختبري</h3>
+    <p>التجارب العملية للمرحلة الابتدائية والمتوسطة والثانوية</p>
+ <h2>الصف الأول الابتدائي </h2>
+  <p>
+    <button ion-button color="primary"  (click)="goTo(0)">الفصل الدراسي الأول</button>
+    <button ion-button color="primary"  (click)="goTo(1)">الفصل الدراسي الثاني</button>
 
-<ion-content padding class="bg-color card-background-page" >
+  </p>
+       <h2>الصف الثاني الابتدائي</h2>
+  <p>
+    <button ion-button  color="second" (click)="goTo(2)">الفصل الدراسي الأول</button>
+    <button ion-button  color="second" (click)="goTo(3)">الفصل الدراسي الثاني</button>
+  </p>
+   <h2>الصف الثالث الابتدائي</h2>
+
+  <p>
+    <button ion-button color="third"  (click)="goTo(4)">الفصل الدراسي الأول</button>
+     <button ion-button color="third"  (click)="goTo(5)">الفصل الدراسي الثاني</button>
+
+  </p>
+        <h2>الصف الرابع الابتدائي</h2> 
+  <p>
+    <button ion-button color="forth"  (click)="goTo(6)">الفصل الدراسي الأول</button>
+    <button ion-button color="forth"  (click)="goTo(7)">الفصل الدراسي الثاني</button>
+  </p>
+          <h2>الصف الخامس الابتدائي</h2>
+  <p>
+    <button ion-button color="fifth"  (click)="goTo(8)">الفصل الدراسي الأول</button>
+    <button ion-button color="fifth"  (click)="goTo(9)">الفصل الدراسي الثاني</button>
+  </p>
+       <h2>الصف السادس الابتدائي</h2>
+  <p>
+    <button ion-button color="sixth"  (click)="goTo(10)">الفصل الدراسي الأول</button>
+    <button ion-button color="sixth"  (click)="goTo(11)">الفصل الدراسي الثاني</button>
+  </p>
+  <h2>الصف الأول المتوسط </h2>
+  <p>
+    <button ion-button color="primary"  (click)="goTo(12)">الفصل الدراسي الأول</button>
+    <button ion-button color="primary"  (click)="goTo(13)">الفصل الدراسي الثاني</button>
+
+  </p>
+       <h2>الصف الثاني المتوسط</h2>
+  <p>
+    <button ion-button  color="second" (click)="goTo(14)">الفصل الدراسي الأول</button>
+    <button ion-button  color="second" (click)="goTo(15)">الفصل الدراسي الثاني</button>
+  </p>
+   <h2>الصف الثالث المتوسط</h2>
+
+  <p>
+    <button ion-button color="third"  (click)="goTo(16)">الفصل الدراسي الأول</button>
+     <button ion-button color="third"  (click)="goTo(17)">الفصل الدراسي الثاني</button>
+
+  </p>
+        <h2>الصف الأول الثانوي الفصل الدراسي الأول</h2> 
+  <p>
+    <button ion-button color="forth"  (click)="goTo(18)">مادة الكيمياء</button>
+    <button ion-button color="forth"  (click)="goTo(19)">مادة الفيزياء</button>
+        <button ion-button color="forth"  (click)="goTo(20)">مادة الأحياء</button>
+
+  </p>
+          <h2>الصف الأول الثانوي الفصل الدراسي الثاني</h2>
  <p>
-  <ion-card>
-    <img src="../../assets/imgs/logo2.png"/>
+    <button ion-button color="forth"  (click)="goTo(21)">مادة الكيمياء</button>
+    <button ion-button color="forth"  (click)="goTo(22)">مادة الفيزياء</button>
+        <button ion-button color="forth"  (click)="goTo(23)">مادة الأحياء</button>
 
-  </ion-card>
-
-</p>
-
-
-
-
-
-
-
-  <p>
-    <button ion-button color="primary" full  (click)="GoToFirst()" round> المرحلة الابتدائية</button>
   </p>
+       <h2>الصف الثاني الثانوي الفصل الدراسي الأول</h2>
   <p>
-    <button ion-button color="second" full  (click)="GoToSecond()" round>المرحلة المتوسطة</button>
+    <button ion-button color="forth"  (click)="goTo(24)">مادة الكيمياء</button>
+    <button ion-button color="forth"  (click)="goTo(25)">مادة الفيزياء</button>
+        <button ion-button color="forth"  (click)="goTo(26)">مادة الأحياء</button>
+
+  </p>
+  <h2>الصف الثاني الثانوي الفصل الدراسي الثاني </h2>
+  <p>
+    <button ion-button color="forth"  (click)="goTo(27)">مادة الكيمياء</button>
+    <button ion-button color="forth"  (click)="goTo(28)">مادة الفيزياء</button>
+        <button ion-button color="forth"  (click)="goTo(29)">مادة الأحياء</button>
+
+  </p>
+       <h2>الصف الثالث الثانوي الفصل الدراسي الأول</h2>
+   <p>
+    <button ion-button color="forth"  (click)="goTo(30)">مادة الكيمياء</button>
+    <button ion-button color="forth"  (click)="goTo(31)">مادة الفيزياء</button>
+        <button ion-button color="forth"  (click)="goTo(32)">مادة الأحياء</button>
+
+  </p>
+   <h2>الصف الثالث الثانوي الفصل الدراسي الثاني</h2>
+
+   <p>
+    <button ion-button color="forth"  (click)="goTo(33)">مادة الكيمياء</button>
+    <button ion-button color="forth"  (click)="goTo(34)">مادة الفيزياء</button>
+        <button ion-button color="forth"  (click)="goTo(35)">مادة الأحياء</button>
+
   </p>
 
-  <p>
-    <button ion-button color="third" full  (click)="GoToThird()" round>المرحلة الثانوية</button>
-  </p>
-
+    </div>
 
 </ion-content>
